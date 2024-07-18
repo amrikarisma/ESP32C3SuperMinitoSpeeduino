@@ -1,4 +1,5 @@
 Voici un petit bout de code pour faire communiquer un ESP32C3 Super Mini vers un Speeduino en STM32F407VET6. 
+
 (certainement utilisable sur d'autre CPU)
 
 La communication se fait via l'UART1 de l'ESP32 soit les GPIO0 et 1, et pour le STM32 les broches PA9 et PA10.
