@@ -44,7 +44,7 @@ class MyServerCallbacks : public BLEServerCallbacks {
 
 class MyCallbacks : public BLECharacteristicCallbacks {
     void onWrite(BLECharacteristic *pCharacteristic) {
-        std::string rxValue = pCharacteristic->getValue();
+        String rxValue = pCharacteristic->getValue();
         if (rxValue.length() > 0) {
             Serial1.write((uint8_t*)rxValue.c_str(), rxValue.length());
         }
